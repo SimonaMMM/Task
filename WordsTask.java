@@ -61,14 +61,10 @@ public class WordsTask {
 
     public static void main(String[] args) throws IOException {
         WordsTask task = new WordsTask();
-
-        long startTime = System.currentTimeMillis();
         List<String> allNineLetterWords = task.getAllNineLetterWords();
-        long stopTime = System.currentTimeMillis();
-
-        System.out.println(stopTime - startTime);
-//        for (String word : allNineLetterWords) {
-//            System.out.println(word);
-//        }
+        
+        for (String word : allNineLetterWords) {
+            System.out.println(word);
+        }
     }
 }
